@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
+    width: 800px;
     height: 800px;
     overflow: hidden;
     background-color: grey;
@@ -44,7 +44,7 @@ body {
 
 .text {
     display: flex;
-    width: 80%;
+    width: 260px;
     height: 50px;
     overflow: hidden;
 }
@@ -65,14 +65,14 @@ body {
 .description {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 50px;
     color: aqua;
     font-size: 20px;
     width: 220px;
 }
 
 .slider {
-    margin-right: 40px;
+    margin-right: 45px;
 }
 
 .btn {
