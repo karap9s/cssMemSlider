@@ -17,8 +17,9 @@ body {
 
 .img-block {
     display: flex;
-    transition: all .5s;
     width: 400%;
+    opacity: 1;
+    animation: fade .5s linear;
     /* margin-left: -100%; */
 }
 
@@ -50,9 +51,16 @@ body {
 
 .text-wrapper {
     display: flex;
-    transition: all .5s;
+    opacity: 1;
+    animation: fade .5s linear;
     /* margin-left: -260px; */
 }
+
+@keyframes fade {
+    0% { opacity: 0 }
+    50% { opacity: 0.5 }
+    100% {opacity: 1}
+  }
 
 .description {
     display: flex;
