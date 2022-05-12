@@ -157,6 +157,9 @@ label:hover span {
 #btn1:checked ~ .lower-block .slider .panel1:hover span {
     border-color: #fff;
 }
+#btn1:active ~ .lower-block .slider .panel1 span:hover {
+    background-color: aquamarine;
+}
 
 #btn2:checked ~ .lower-block .slider .panel2 span {
     background: transparent;
@@ -165,6 +168,10 @@ label:hover span {
 
 #btn2:checked ~ .lower-block .slider .panel2:hover span {
     border-color: #fff;
+}
+
+#btn2:active ~ .lower-block .slider .panel2 span:hover {
+    background-color: aquamarine;
 }
 
 #btn3:checked ~ .lower-block .slider .panel3 span {
@@ -176,6 +183,10 @@ label:hover span {
     border-color: #fff;
 }
 
+#btn3:active ~ .lower-block .slider .panel3 span:hover {
+    background-color: aquamarine;
+}
+
 #btn4:checked ~ .lower-block .slider .panel4 span {
     background: transparent;
     border: 2px solid aquamarine;
@@ -183,6 +194,10 @@ label:hover span {
 
 #btn4:checked ~ .lower-block .slider .panel4:hover span {
     border-color: #fff;
+}
+
+#btn4:active ~ .lower-block .slider .panel4 span:hover {
+    background-color: aquamarine;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
