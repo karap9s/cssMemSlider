@@ -217,18 +217,17 @@ label:hover span {
     }
 
     .lower-block {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .text {
-        width: 320px;
+        width: 480px;
         height: 40px;
     }
 
     .description {
-        justify-content: center;
-        width: 320px;
-        margin-left: 0;
+        width: 480px;
+        margin-left: 10px;
         font-size: 20px;
     }
 
@@ -256,15 +255,15 @@ label:hover span {
     }
     
     #btn2:checked ~ .lower-block .text .text-wrapper {
-        margin-left: -100%;
+        margin-left: -102%;
     }
     
     #btn3:checked ~ .lower-block .text .text-wrapper {
-        margin-left: -200%;
+        margin-left: -204%;
     }
     
     #btn4:checked ~ .lower-block .text .text-wrapper {
-        margin-left: -300%;
+        margin-left: -306%;
     }
 }
 
@@ -285,7 +284,7 @@ label:hover span {
     }
 
     .lower-block {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .text {
@@ -294,10 +293,9 @@ label:hover span {
     }
 
     .description {
-        justify-content: center;
         width: 320px;
         font-size: 18px;
-        margin-left: 0;
+        margin-left: 20px;
     }
 
     .slider {
@@ -329,14 +327,14 @@ label:hover span {
     }
     
     #btn2:checked ~ .lower-block .text .text-wrapper {
-        margin-left: -100%;
+        margin-left: -106%;
     }
     
     #btn3:checked ~ .lower-block .text .text-wrapper {
-        margin-left: -200%;
+        margin-left: -212%;
     }
     
     #btn4:checked ~ .lower-block .text .text-wrapper {
-        margin-left: -300%;
+        margin-left: -318%;
     }
 }
