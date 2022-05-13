@@ -1,0 +1,345 @@
+@import url('reset.css');
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 50rem;
+    overflow: hidden;
+    background-color: grey;
+}
+
+.img-block {
+    display: flex;
+    width: 400%;
+    margin: 1rem 0;
+}
+
+.img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.meme {
+    width: 43.75rem;
+    height: 43.75rem;
+}
+
+.lower-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+}
+
+.text {
+    display: flex;
+    width: 30rem;
+    height: 3.125rem;
+    overflow: hidden;
+}
+
+.text-wrapper {
+    display: flex;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    margin-left: 3.125rem;
+    color: aqua;
+    font-size: 1.5rem;
+    width: 27.5rem;
+}
+
+.slider {
+    margin-right: 2.813rem;
+}
+
+input {
+    display: none;
+}
+
+.panel {
+    width: 1rem;
+    height: 1rem;
+    padding: 0.313rem;
+    padding-top: 0.625rem;
+}
+
+.panel:hover {
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: red;
+}
+
+#btn1:checked ~ .img-block {
+    margin-left: 0;
+    transition: .5s;
+}
+
+#btn2:checked ~ .img-block {
+    margin-left: -100%;
+    transition: .5s;
+}
+
+#btn3:checked ~ .img-block {
+    margin-left: -200%;
+    transition: .5s;
+}
+
+#btn4:checked ~ .img-block {
+    margin-left: -300%;
+    transition: .5s;
+}
+
+
+
+#btn1:checked ~ .lower-block .text .text-wrapper {
+    margin-left: 0;
+    transition: .5s;
+}
+
+#btn2:checked ~ .lower-block .text .text-wrapper {
+    margin-left: -102%;
+    transition: .5s;
+}
+
+#btn3:checked ~ .lower-block .text .text-wrapper {
+    margin-left: -204%;
+    transition: .5s;
+}
+
+#btn4:checked ~ .lower-block .text .text-wrapper {
+    margin-left: -306%;
+    transition: .5s;
+}
+
+label {
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    cursor: pointer;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    background-color: tomato;
+}
+
+label:hover span {
+    background-color: white;
+}
+
+#btn1:checked ~ .lower-block .slider .panel1 span {
+    background: transparent;
+    border: 0.125rem solid aquamarine;
+}
+
+#btn1:checked ~ .lower-block .slider .panel1:hover span {
+    border-color: #fff;
+}
+#btn1:active ~ .lower-block .slider .panel1 span:hover {
+    background-color: aquamarine;
+}
+
+#btn2:checked ~ .lower-block .slider .panel2 span {
+    background: transparent;
+    border: 0.125rem solid aquamarine;
+}
+
+#btn2:checked ~ .lower-block .slider .panel2:hover span {
+    border-color: #fff;
+}
+
+#btn2:active ~ .lower-block .slider .panel2 span:hover {
+    background-color: aquamarine;
+}
+
+#btn3:checked ~ .lower-block .slider .panel3 span {
+    background: transparent;
+    border: 0.125rem solid aquamarine;
+}
+
+#btn3:checked ~ .lower-block .slider .panel3:hover span {
+    border-color: #fff;
+}
+
+#btn3:active ~ .lower-block .slider .panel3 span:hover {
+    background-color: aquamarine;
+}
+
+#btn4:checked ~ .lower-block .slider .panel4 span {
+    background: transparent;
+    border: 0.125rem solid aquamarine;
+}
+
+#btn4:checked ~ .lower-block .slider .panel4:hover span {
+    border-color: #fff;
+}
+
+#btn4:active ~ .lower-block .slider .panel4 span:hover {
+    background-color: aquamarine;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+        width: 30rem;
+        height: 43.75rem;
+    }
+
+    .meme {
+        width: 28.75rem;
+        height: 36.25rem;
+    }
+
+    .img-block {
+        margin: 0.938rem 0;
+        height: 36.25rem;
+    }
+
+    .lower-block {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: 30rem;
+        height: 2.5rem;
+    }
+
+    .description {
+        width: 30rem;
+        margin-left: 0.625rem;
+        font-size: 1.25rem;
+    }
+
+    .slider {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        height: 2.188rem;
+    }
+
+    span {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .panel {
+        width: 2rem;
+        padding: 0.313rem;
+        padding-top: 0.438rem;
+        margin-bottom: 0.625rem;
+    }
+
+    #btn1:checked ~ .lower-block .text .text-wrapper {
+        margin-left: 0;
+    }
+    
+    #btn2:checked ~ .lower-block .text .text-wrapper {
+        margin-left: -102%;
+    }
+    
+    #btn3:checked ~ .lower-block .text .text-wrapper {
+        margin-left: -204%;
+    }
+    
+    #btn4:checked ~ .lower-block .text .text-wrapper {
+        margin-left: -306%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 20rem;
+        height: 31.25rem;
+    }
+
+    .meme {
+        width: 17.5rem;
+        height: 23.75rem;
+    }
+
+    .img-block {
+        margin: 0.625rem 0;
+        height: 23.75rem;
+    }
+
+    .lower-block {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: 20rem;
+        height: 3.125rem;
+    }
+
+    .description {
+        width: 20rem;
+        font-size: 1.125rem;
+        margin-left: 1.25rem;
+    }
+
+    .slider {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span {
+        width: 0.938rem;
+        height: 0.938rem;
+    }
+
+    .panel {
+        width: 1.563rem;
+        height: 1.563rem;
+        padding: 0.313rem;
+        padding-top: 0.438rem;
+    }
+
+    #btn1:checked ~ .lower-block .text .text-wrapper {
+        margin-left: 0;
+    }
+    
+    #btn2:checked ~ .lower-block .text .text-wrapper {
+        margin-left: -106%;
+    }
+    
+    #btn3:checked ~ .lower-block .text .text-wrapper {
+        margin-left: -212%;
+    }
+    
+    #btn4:checked ~ .lower-block .text .text-wrapper {
+        margin-left: -318%;
+    }
+}
